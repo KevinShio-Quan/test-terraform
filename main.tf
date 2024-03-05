@@ -30,11 +30,6 @@ module "ecr-repo" {
   ecr_repo_name = local.ecr_repo_name
 }
 
-module "ecr-repo2" {
-  source        = "./modules/ecr"
-  ecr_repo_name = "test-repo2"
-}
-
 module "ecs" {
   source = "./modules/ecs"
 
